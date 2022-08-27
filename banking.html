@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h2 class=" text-center mt-5 text-4xl font-bold text-lime-500">Let's get some <span class="text-pink-600	">Money</span>!!!</h2>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- balance transaction -->
+        <section>
+            <div>
+                <div class="text-center grid grid-cols-3 mt-6  gap-10  text-white">
+                    <div class="bg-blue-400 p-8 rounded">
+                        <h3 class="text-2xl">Deposit</h3>
+                        <h4 class="text-3xl">$<span id="total-depo">00</span></h4>
+                    </div>
+                    <div class="bg-yellow-400	 p-8 rounded">
+                        <h3 class="text-2xl">Withdraw</h3>
+                        <h4 class="text-3xl">$<span id="withdraw-amount">00</span> </h4>
+                    </div>
+                    <div class="bg-teal-900	 p-8 rounded">
+                        <h3 class="text-2xl">Balance</h3>
+                        <h4 class="text-3xl">$ <span id="balance-total">1240</span></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-6">
+                <!-- Deposit amount -->
+                <div class="mt-8 bg-fuchsia-500	p-2 rounded	">
+                    <h3 class="ml-5 mt-4 text-2xl mb-3">Please Deposit</h3>
+                    <div>
+                        <input id="deposit-amount" class="ml-5 border-grey-400 block  mb-5 w-3/4 px-2 border" type="email" name="" id="" placeholder="$ Deposit your amount">
+                        <button id="deposit-btn" class="ml-5 rounded bg-amber-700 p-2	text-orange-50  mb-4 font-small">Deposit</button>
+                    </div>
+                </div>
+                <!-- withDraw amount -->
+                <div class="mt-8 bg-fuchsia-500	p-2 rounded	">
+                    <h3 class="ml-5 mt-4 text-2xl mb-3">Please Withdraw</h3>
+                    <div>
+                        <input id="withdraw-input" class="ml-5 border-grey-400 block  mb-5 w-3/4 px-2 border" type="email" name="" id="" placeholder="$ Withdraw your amount">
+                        <button id="withdraw-btn" class="ml-5 rounded bg-amber-700 p-2	text-orange-50  mb-4 font-small">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+</html>
